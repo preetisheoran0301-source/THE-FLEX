@@ -21,6 +21,7 @@
             font-family: 'Playfair Display', serif;
             margin: 0;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         header {
@@ -77,21 +78,26 @@
             text-align: center;
             transition: 0.4s;
             position: relative;
-            overflow: hidden;
         }
 
         .member-card:hover {
             border-color: var(--gold);
             transform: translateY(-15px);
             background: rgba(212, 175, 55, 0.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .member-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(212,175,55,0.2);
         }
 
         .member-card h3 {
             font-family: 'Cinzel', serif;
             color: var(--gold);
             font-size: 1.8rem;
-            margin-bottom: 5px;
+            margin: 10px 0 5px 0;
         }
 
         .member-card .role {
@@ -118,6 +124,7 @@
             padding: 60px 40px;
             text-align: center;
             background: #000;
+            transition: 0.5s;
         }
 
         input[type="email"] {
@@ -127,6 +134,7 @@
             border: 1px solid var(--gold);
             color: white;
             font-family: 'Cinzel';
+            margin-bottom: 10px;
         }
 
         .gold-btn {
@@ -145,7 +153,7 @@
             display: none;
             background: #fff;
             color: #111;
-            padding: 60px;
+            padding: 40px;
             text-align: left;
             margin-top: 40px;
             box-shadow: 0 0 50px rgba(212, 175, 55, 0.3);
@@ -192,45 +200,45 @@
     <h2 class="section-title">The Lineup</h2>
     <div class="members-container">
         <div class="member-card">
-            <img src="ira.jpg" style="width:100%; border-radius: 5px; margin-bottom: 15px;">
+            <img src="ira.jpg" alt="IRA">
             <span class="mbti">ISFJ</span>
             <h3>IRA</h3>
-            <p class="role">Main Dancer <br> Lead Vocalist</p>
-            <p style="color: #FFB7C5;">Soft Pink | 🇰🇷</p>
+            <p class="role">Main Dancer | Lead Vocalist</p>
+            <p style="color: #FFB7C5;">Soft Pink | South Korea</p>
         </div>
         <div class="member-card">
-            <img src="skye.jpg" style="width:100%; border-radius: 5px; margin-bottom: 15px;">
+            <img src="skye.jpg" alt="SKYE">
             <span class="mbti">ESFP</span>
             <h3>SKYE</h3>
-            <p class="role">Lead Dancer <br> Sub Rapper</p>
-            <p style="color: #0077BE;">Ocean Blue | 🇦🇺</p>
+            <p class="role">Lead Dancer | Sub Rapper</p>
+            <p style="color: #0077BE;">Ocean Blue | Australia</p>
         </div>
         <div class="member-card">
-            <img src="zara.jpg" style="width:100%; border-radius: 5px; margin-bottom: 15px;">
+            <img src="zara.jpg" alt="ZARA">
             <span class="mbti">ENFJ</span>
             <h3>ZARA</h3>
             <p class="role">Main Vocalist</p>
-            <p style="color: #FFFFFF;">Pure White | 🇿🇦</p>
+            <p style="color: #FFFFFF;">Pure White | South Africa</p>
         </div>
         <div class="member-card">
-            <img src="jiya.jpg" style="width:100%; border-radius: 5px; margin-bottom: 15px;">
+            <img src="jiya.jpg" alt="JIYA">
             <span class="mbti">ENTJ</span>
             <h3>JIYA</h3>
-            <p class="role">Main Rapper <br> Producer</p>
-            <p style="color: #800020;">Burgundy | 🇮🇳</p>
+            <p class="role">Main Rapper | Producer</p>
+            <p style="color: #800020;">Burgundy | India</p>
         </div>
         <div class="member-card">
-            <img src="raya.jpg" style="width:100%; border-radius: 5px; margin-bottom: 15px;">
+            <img src="raya.jpg" alt="RAYA">
             <span class="mbti">ISTJ</span>
             <h3>RAYA</h3>
-            <p class="role">Center <br> All-rounder</p>
-            <p style="color: #E6E6FA;">Silver Lavender | 🏴󠁧󠁢󠁥󠁮󠁧󠁿</p>
+            <p class="role">Center | All-rounder</p>
+            <p style="color: #E6E6FA;">Silver Lavender | England</p>
         </div>
     </div>
 
     <div class="reveal-box">
         <h2 style="font-family: 'Cinzel'; margin: 0;">Unlock the Story</h2>
-        <p style="color: #888; font-style: italic;">“A heart that refused to stop beating.”</p>
+        <p style="color: #888; font-style: italic;">"A heart that refused to stop beating."</p>
         
         <div id="form-container">
             <input type="email" id="user-email" placeholder="ENTER EMAIL ADDRESS" required>
